@@ -1,0 +1,10 @@
+PROCEDURE "get_books_procedure" (out result "SAP_MYHANAPROJ_BOOKSHOP_BOOKS")
+    LANGUAGE SQLSCRIPT
+    SQL SECURITY INVOKER
+    READS SQL DATA AS
+BEGIN
+
+    /* Select all records */
+    result = SELECT * FROM "SAP_MYHANAPROJ_BOOKSHOP_BOOKS";
+
+END
